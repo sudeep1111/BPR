@@ -1,0 +1,21 @@
+# Dockerfile
+
+# Use the base image of your choice
+# Replace `base-image` with the appropriate base image, e.g., `python:3.9`
+FROM base-image
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the necessary files to the container
+COPY . .
+
+# Add any additional commands to install dependencies or configure the environment
+# For example, if using a Python-based image, you can install dependencies with pip:
+# RUN pip install -r requirements.txt
+
+# Specify any required environment variables or configuration
+
+# Specify the command to run when the container starts
+# For example, if your application is a Python script:
+# CMD ["python", "app.py"]
